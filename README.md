@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# 📝 Task List - React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação de gerenciamento de tarefas prática e eficiente, desenvolvida para exercitar conceitos fundamentais de desenvolvimento web moderno, como manipulação de estado, persistência local e tipagem estática.
+🚀 Funcionalidades
 
-Currently, two official plugins are available:
+    Criação de Tarefas: Adicione itens rapidamente usando o botão ou pressionando a tecla Enter.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+    Controle de Status: Marque e desmarque tarefas como concluídas de forma dinâmica.
 
-## React Compiler
+    Exclusão: Remova tarefas individualmente da lista.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+    Persistência Local: Utiliza a API localStorage para manter seus dados salvos mesmo após fechar o navegador.
 
-## Expanding the ESLint configuration
+    Interface Responsiva: Projetada para funcionar bem em diferentes tamanhos de tela.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias e Ferramentas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+    React 18 (UI Library)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+    TypeScript (Segurança e tipagem de dados)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+    Vite (Ambiente de desenvolvimento e build rápido)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+    CSS Nativo (Estilização dos componentes)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Organização do Código
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+    src/components/: Componentes reutilizáveis da interface.
+
+    src/types/: Definições de interfaces do TypeScript para padronização dos objetos.
+
+    src/App.tsx: Gerenciamento do estado global e lógica de persistência.
+
+## 🔧 Como Iniciar o Projeto
+
+    Clone o repositório:
+    Bash
+
+    gh repo clone matheusxz9/Lista-de-Tarefas
+
+    Instale as dependências:
+    Bash
+
+    npm install
+
+    Rode o projeto em modo de desenvolvimento:
+    Bash
+
+    npm run dev
+
+    Acesse no seu navegador: http://localhost:5173
