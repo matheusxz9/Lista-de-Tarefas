@@ -20,6 +20,7 @@ function TaskInput({ addTask }: Props) {
         placeholder="Digite uma tarefa"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
+        onKeyDown={(e) => e.key === 'Enter' && handleAdd()}
       />
       <button onClick={handleAdd}>Adicionar</button>
     </div>
